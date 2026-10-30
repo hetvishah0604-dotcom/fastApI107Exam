@@ -1,0 +1,12 @@
+services:
+  app:
+    build: 
+      context: .         # Added '.' to specify the current directory
+      dockerfile: DockerFile
+    ports:
+      - "8000:8000"      # Added a space after the hyphen for standard YAML formatting
+    # image: myfirstapi:latest
+
+#for run
+#docker compose build
+#docker run myfirstapi
